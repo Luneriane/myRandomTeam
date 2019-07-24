@@ -4,6 +4,7 @@ const previousTeam = document.getElementById('previousTeam');
 const howMany = document.getElementById('howMany');
 const howManyBtn = document.getElementById('howManyBtn');
 const newTeam = document.getElementById('newTeam');
+const myTeams = document.getElementById('myTeams');
 // Local Storage
 let previousData = JSON.parse(window.localStorage.getItem('previousTeams'));
 // JSON
@@ -53,15 +54,11 @@ function temporaryData (data) {
 
 /* Remise à zéro */
 function cleanMyDatas(){
-    var myUls = document.querySelectorAll('#newTeam ul');
-    console.log(newTeam);
-    Array.prototype.forEach.call( myUls, function( node ) {
-        console.log(node)
-        node.parentNode.removeChild( node );
-    });
-    
+    const ulTeams = document.querySelectorAll('#myTeams ul')
+    ulTeams.remove;    
     tempData = [];
     hasLists = false;
+    console.log('clean');
 }
 
 /* Nombre de groupes */
@@ -99,7 +96,10 @@ function completingGroup(data){
 function showingGroups(groups){
     for (let group in groups) {
         let newUl = document.createElement('ul');
-        newTeam.appendChild(newUl);
+        let newTitle = document.createElement('h3');
+        myTeams.appendChild(newUl);
+        newUl.appendChild(newTitle);
+        newTitle.innerText = "Groupe " + group;
 
         for (let person in groups[group]) {
             let newLi = document.createElement('li');
@@ -114,7 +114,7 @@ howManyBtn.onclick = () => {
     let howManyGroups = Math.ceil(originalData.data.length / howMany.value);
 
     /* Netoyage des listes */
-    if (hasLists) { cleanMyDatas() };
+    if (hasLists) {cleanMyDatas()};
 
     /* Stockage des données */
     temporaryData(originalData.data);

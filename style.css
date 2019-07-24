@@ -29,16 +29,15 @@ main {
 section {
     overflow: auto;
     width: 68%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     box-shadow: 0 0 0.1em slategrey;
     background-color: lightyellow;
     border-radius: 0.5em;
 }
 ul {
-    border: solid 1px red;
+    margin: 0.5em 1em;
+    box-shadow: 0 0 0.2em black;
+    padding: 1em;
+    border-radius: 0.2em;
 }
 li {
     list-style: none;
@@ -51,6 +50,7 @@ li {
 }
 #myButtons {
     height: 8%;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -72,13 +72,18 @@ button {
     position: relative;
     height: 91%;
     padding-top: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: space-around;
 }
 #myValidation {
     position: absolute;
     bottom: 1em;
     right: 1em;
+}
+#myTeams {
+    width: 100%;
+    margin-top: 0;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: space-around;
 }
