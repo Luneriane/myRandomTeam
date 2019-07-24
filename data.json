@@ -1,0 +1,25 @@
+{
+    "data": [
+        {"name": "Léna", "sexe": 1},
+        {"name": "Christopher", "sexe": 0},
+        {"name": "Ibrahima", "sexe": 0},
+        {"name": "Sonia", "sexe": 1},
+        {"name": "Clémence", "sexe": 1},
+        {"name": "Nadia", "sexe": 1},
+        {"name": "Sofia", "sexe": 1}, 
+        {"name": "Francoise", "sexe": 1},
+        {"name": "Joris", "sexe": 0},
+        {"name": "Devrice", "sexe": 0},
+        {"name": "Orchidea", "sexe": 1}, 
+        {"name": "Yoursa", "sexe": 1},
+        {"name": "Julien B", "sexe": 0},
+        {"name": "Lilian", "sexe": 0},
+        {"name": "Maxime", "sexe": 0}, 
+        {"name": "Emeric", "sexe": 0},
+        {"name": "Nabil", "sexe": 0},
+        {"name": "Awa", "sexe": 1},
+        {"name": "Ray", "sexe": 0},
+        {"name": "Smaelle", "sexe": 1}, 
+        {"name": "Julien R", "sexe": 0}
+    ]
+}

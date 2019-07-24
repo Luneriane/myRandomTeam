@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(160, 82, 46);}
+h1 {
+    width: 100%;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+main {
+    height: 91vh;
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    overflow: auto;
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 0 0.1em slategrey;
+    background-color: lightyellow;
+    border-radius: 0.5em;
+}
+ul {
+    border: solid 1px red;
+}
+li {
+    list-style: none;
+    line-height: 1.2em;
+}
+#people {
+    height: 100%;
+    width: 30%;
+    padding: 1em;
+}
+#myButtons {
+    height: 8%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0.1em slategrey;
+    background-color: rgb(228, 207, 138);
+}
+#howMany {
+    margin: 0 1em;
+    height: 2.5em;
+    width: 3.5em;
+    text-align: right;
+}
+button {
+    height: 2.5em;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+}
+#newTeam {
+    position: relative;
+    height: 91%;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+#myValidation {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
