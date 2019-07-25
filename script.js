@@ -17,7 +17,7 @@ let myGroups = new Array();
 let hasLists = false;
 
 
-/* Récupération des datas JSON */
+/* Récupération des datas JSON CHECKED*/
 window.onload = () => {
     var request = new XMLHttpRequest();
     request.open("get", "./data.json", true);
@@ -33,7 +33,7 @@ window.onload = () => {
     request.send();
 }
 
-/* Intégration des datas dans la page */
+/* Intégration des datas dans la page CHECKED*/
 function insertData(data) {
     let newUl = document.createElement('ul');
     people.appendChild(newUl);
@@ -52,32 +52,28 @@ function temporaryData (data) {
     };
 }
 
-/* Remise à zéro */
+/* Remise à zéro CHECKED*/
 function cleanMyDatas(){
-    const ulTeams = document.querySelectorAll('#myTeams ul')
-    ulTeams.remove;    
+    myTeams.innerHTML = "";
+    myGroups = [];
     tempData = [];
     hasLists = false;
-    console.log('clean');
 }
 
-/* Nombre de groupes */
+/* Nombre de groupes CHECKED*/
 function numberOfGroups(numb){
     for (let i = 0; i < numb; i++){
         var group = new Array();
         myGroups.push(group);
     }
-    console.log("groupes");
-    console.log(myGroups);
 }
 
 /* Constitution des groupes */
 function completingGroup(data){
 
     let groupI = 0;
-    console.log(data);
 
-    for (let dataI in data) {
+    for (let dataI in originalData.data) {
         let randomI = Math.floor(Math.random()*data.length);
         
         myGroups[groupI].push(data[randomI]);
@@ -86,10 +82,7 @@ function completingGroup(data){
         groupI++;
         if (groupI > myGroups.length-1) { groupI = 0 };
 
-        console.log(randomI);
-        console.log(data);
     }
-    console.log(myGroups);
 }
 
 /* Affichage des groupes CHECKED*/
