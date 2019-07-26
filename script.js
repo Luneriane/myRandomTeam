@@ -132,20 +132,23 @@ function completingGroup(data){
 
     let groupI = 0;
 
+    console.log(previousData);
     for (let dataI in originalData.data) {
         let randomI = Math.floor(Math.random()*data.length);
 
-
-        let prevTeammates = [];
-        for (let group in previousData) {
-            for (let member in group) {
-                if (originalData.data[dataI] == previousData[group][member]) {
-                    prevTeammates = previousData[group];
-                    prevTeammates.splice(previousData[group][member], 1);
-                    console.log(prevTeammates);
+        /* Récupération des anciens membre d'équipe */
+        let prevTeam;
+        for (let prevGroup in previousData) {
+            for (let member in prevGroup) {
+                if (originalData.data[dataI].name == previousData[prevGroup][member]) {
+                    prevTeam = previousData[prevGroup];
+                    //prevTeammates.splice(previousData[group][member], 1);
+                    console.log(originalData.data[dataI].name);
+                    console.log(prevTeam);
                 }
             }
         }
+        
         myGroups[groupI].push(data[randomI]);
         data.splice(randomI, 1);
 
