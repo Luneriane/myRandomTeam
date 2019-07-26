@@ -13,19 +13,22 @@
         <section id="people">
             <h2>21 Code Street</h2>
         </section>
+        <section id="previousTeam">
+            <h2>Anciennes équipes</h2>
+            
+            <article id="myPreviousTeams" class="teams">
+            </article>
+        </section>
         <section id="myButtons">
             <label for="howMany">Personnes par groupe : </label>
             <input type="number" name="howMany" id="howMany" min="2"></input>
             <button id="howManyBtn">Random !</button>
+            <button id="validation">Valider</button>
+            <span id="message"></span>
         </section>
         <section id="newTeam">
             <h2>Nouvelles équipes</h2>
-            <article id="myValidation">
-                <button id="validation">Valider</button>
-                <button id="again">Relancer</button>
-                <span id="message"></span>
-            </article>
-            <article id="myTeams">
+            <article id="myTeams" class="teams">
             </article>
         </section>
     </main>

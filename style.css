@@ -48,6 +48,10 @@ li {
     width: 30%;
     padding: 1em;
 }
+#previousTeam {
+    height: 45%;
+    padding-top: 1em;
+}
 #myButtons {
     height: 8%;
     display: flex;
@@ -68,17 +72,15 @@ button {
     margin: 0 1em;
     padding: 0.5em 1em;
 }
+#validation {
+    display: none;
+}
 #newTeam {
     position: relative;
-    height: 91%;
+    height: 45%;
     padding-top: 1em;
 }
-#myValidation {
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-}
-#myTeams {
+.teams {
     width: 100%;
     margin-top: 0;
     padding: 1em;
