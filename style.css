@@ -13,7 +13,7 @@ h1 {
     line-height: 8vh;
     text-align: center;
     color: white;
-    text-shadow: 0.1em 0.1em mediumvioletred;
+    text-shadow: 0.1em 0.1em #D9300B;
 }
 h2 {
     width: 100%;
@@ -33,14 +33,14 @@ main {
 section {
     overflow: auto;
     width: 68%;
-    background-color: lightyellow;
+    background-color: #FFDEC4;
     border-radius: 0.25em;
-    border: groove 0.1em mediumvioletred;
-    box-shadow: 0 0 0.2em mediumvioletred;
+    border: groove 0.1em #D9300B;
+    box-shadow: 0 0 0.3em #D9300B;
 }
 ul {
     margin: 0.5em 1em;
-    box-shadow: 0 0 0.2em #2F0F05;
+    box-shadow: 0 0 0.2em #D9300B;
     background-color: rgba(160, 82, 46, 0.25);
     padding: 1em;
     border-radius: 0.2em;
@@ -71,7 +71,7 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: Thistle;
+    background-color: rgb(253, 189, 49);
 }
 #howMany {
     margin: 0 1em;
