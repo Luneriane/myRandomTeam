@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(160, 82, 46);}
+    background-color: rgb(160, 82, 46);
+    color: #2F0F05;
+}
 h1 {
     width: 100%;
     height: 8vh;
     line-height: 8vh;
     text-align: center;
+    color: white;
+    text-shadow: 0.1em 0.1em mediumvioletred;
 }
 h2 {
     width: 100%;
@@ -29,13 +33,15 @@ main {
 section {
     overflow: auto;
     width: 68%;
-    box-shadow: 0 0 0.1em slategrey;
     background-color: lightyellow;
-    border-radius: 0.5em;
+    border-radius: 0.25em;
+    border: groove 0.1em mediumvioletred;
+    box-shadow: 0 0 0.2em mediumvioletred;
 }
 ul {
     margin: 0.5em 1em;
-    box-shadow: 0 0 0.2em black;
+    box-shadow: 0 0 0.2em #2F0F05;
+    background-color: rgba(160, 82, 46, 0.25);
     padding: 1em;
     border-radius: 0.2em;
 }
@@ -48,6 +54,13 @@ li {
     width: 30%;
     padding: 1em;
 }
+#people ul {
+    box-shadow: none;
+    background: none;
+}
+#people ul li {
+    list-style: circle inside;
+}
 #previousTeam {
     height: 45%;
     padding-top: 1em;
@@ -58,8 +71,7 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 0.1em slategrey;
-    background-color: rgb(228, 207, 138);
+    background-color: Thistle;
 }
 #howMany {
     margin: 0 1em;
@@ -71,6 +83,8 @@ button {
     height: 2.5em;
     margin: 0 1em;
     padding: 0.5em 1em;
+    background-color: lemonchiffon;
+    outline: none;
 }
 #validation {
     display: none;
